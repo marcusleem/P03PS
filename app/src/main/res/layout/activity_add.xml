@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddGrade">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FF0000" />
+
+    <TextView
+        android:id="@+id/tvWeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:gravity="left"
+        android:text="Week 4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/grade" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DG"
+                android:textColor="#BC8E05" />
+
+
+            <RadioGroup
+                android:id="@+id/rgGrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btnA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A" />
+
+                <RadioButton
+                    android:id="@+id/btnB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B" />
+
+                <RadioButton
+                    android:id="@+id/btnC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C" />
+
+                <RadioButton
+                    android:id="@+id/btnD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D" />
+
+                <RadioButton
+                    android:id="@+id/btnF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="F" />
+
+                <RadioButton
+                    android:id="@+id/btnX"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X" />
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit" />
+
+</LinearLayout>
